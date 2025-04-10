@@ -1,15 +1,20 @@
+import { Link } from "react-router-dom";
 
 
 
 export default function Header() {
   return (
-<header className="w-full bg-background shadow-md">
-      <div className="flex flex-row items-center justify-between px-4 py-3 max-w-7xl mx-auto">
-        <h1 className="text-2xl font-bold text-primary">
-          Web Shop
-        </h1>
- 
-      </div>
+<header className="relative z-10 backdrop-blur-md bg-white/10 border-b border-white/20 w-ful">
+<div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16">
+            {/* Brand on left */}
+            <div className="flex items-center">
+              <Link to="/" className="text-white font-bold text-xl">
+                BidHub
+              </Link>
+            </div>
+            </div>
+            </div>
     </header>
   )
 }
