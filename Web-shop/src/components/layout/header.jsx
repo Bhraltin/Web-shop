@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { useState } from "react"
 
-import { ArrowRight } from "lucide-react"
 
 
 
@@ -26,12 +24,12 @@ export default function Header() {
               </Link>
             </div>
             <div className="flex items-center space-x-4">
-              <Link to="/login" className="text-white/90 hover:text-white transition-colors text-sm font-medium">
+              <Link to="/login" className="hover:bg-white/30 text-white text-sm font-medium py-2 px-4 rounded-lg transition-all">
                 Login
               </Link>
               <Link
                 to="/register"
-                className="bg-white/20 hover:bg-white/30 text-white text-sm font-medium py-2 px-4 rounded-lg transition-all"
+                className="hover:bg-white/30 text-white text-sm font-medium py-2 px-4 rounded-lg transition-all"
               >
                 Register
               </Link>
