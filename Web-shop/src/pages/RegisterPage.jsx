@@ -71,11 +71,11 @@ export default function RegisterPage () {
     return (
         <div className="min-h-screen bg-gradient-to-br from-purple-500 to-pink-500 flex flex-col">
         <Background />
-        <Header isLoggedIn={false} />
+    
   
         <main className="flex-1 flex items-center justify-center p-4 relative z-10">
           <div className="backdrop-blur-lg bg-white/10 p-8 rounded-2xl shadow-xl border border-white/20 w-full max-w-md">
-            <Link href="/" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
+            <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Home
             </Link>
@@ -225,7 +225,7 @@ export default function RegisterPage () {
   
               <div className="text-center text-white/80 text-sm">
                 Already have an account?{" "}
-                <Link href="/login" className="font-medium text-white hover:underline">
+                <Link to="/login" className="font-medium text-white hover:underline">
                   Sign in
                 </Link>
               </div>
