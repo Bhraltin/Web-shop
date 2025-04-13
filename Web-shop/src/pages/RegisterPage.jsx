@@ -58,6 +58,16 @@ export default function RegisterPage () {
         setErrors(newErrors)
         return Object.keys(newErrors).length === 0
       }
+      const handleSubmit = (e) => {
+        e.preventDefault()
+    
+        if (validateForm()) {
+          // Here you would typically handle the registration logic
+          console.log("Form submitted:", formData)
+          // For demo purposes, redirect to dashboard
+          window.location.href = "/dashboard"
+        }
+    }
     return (
         <>
         </>
