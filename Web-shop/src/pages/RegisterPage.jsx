@@ -9,6 +9,25 @@ export default function RegisterPage () {
         password: "",
         confirmPassword: "",
       })
+
+      const [errors, setErrors] = useState({})
+      const [showPassword, setShowPassword] = useState(false)
+      const [showConfirmPassword, setShowConfirmPassword] = useState(false)
+      const handleChange = (e) => {
+        const { name, value } = e.target
+        setFormData({
+          ...formData,
+          [name]: value,
+        })
+    
+    
+        if (errors[name]) {
+          setErrors({
+            ...errors,
+            [name]: "",
+          })
+        }
+      }
     return (
         <>
         </>
