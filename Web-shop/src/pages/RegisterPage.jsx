@@ -28,6 +28,36 @@ export default function RegisterPage () {
           })
         }
       }
+      const validateForm = () => {
+        const newErrors = {}
+    
+        // Name validation
+        if (!formData.name.trim()) {
+          newErrors.name = "Name is required"
+        }
+    
+        // Email validation
+        if (!formData.email) {
+          newErrors.email = "Email is required"
+        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+          newErrors.email = "Email is invalid"
+        }
+    
+        // Password validation
+        if (!formData.password) {
+          newErrors.password = "Password is required"
+        } else if (formData.password.length < 6) {
+          newErrors.password = "Password must be at least 6 characters"
+        }
+    
+        // Confirm password validation
+        if (formData.password !== formData.confirmPassword) {
+          newErrors.confirmPassword = "Passwords do not match"
+        }
+    
+        setErrors(newErrors)
+        return Object.keys(newErrors).length === 0
+      }
     return (
         <>
         </>
