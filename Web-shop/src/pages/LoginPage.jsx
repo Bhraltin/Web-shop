@@ -1,7 +1,7 @@
 
 
 import { useState } from "react"
-import Link from "next/link"
+import {Link} from "react-router-dom"
 import { ArrowLeft, Mail, Lock, Eye, EyeOff } from "lucide-react"
 import Background from "../components/background"
 import Layout from "../components/layout/Layout"
@@ -67,7 +67,7 @@ export default function LoginPage() {
 
       <main className="flex-1 flex items-center justify-center p-4 relative z-10">
         <div className="backdrop-blur-lg bg-white/10 p-8 rounded-2xl shadow-xl border border-white/20 w-full max-w-md">
-          <Link href="/" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
+          <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Home
           </Link>
@@ -160,7 +160,7 @@ export default function LoginPage() {
 
             <div className="text-center text-white/80 text-sm">
               Don't have an account?{" "}
-              <Link href="/register" className="font-medium text-white hover:underline">
+              <Link to="/register" className="font-medium text-white hover:underline">
                 Sign up
               </Link>
             </div>
