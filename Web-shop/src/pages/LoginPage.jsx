@@ -63,8 +63,6 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-500 to-pink-500 flex flex-col">
       <Background />
-  <Layout/>
-
       <main className="flex-1 flex items-center justify-center p-4 relative z-10">
         <div className="backdrop-blur-lg bg-white/10 p-8 rounded-2xl shadow-xl border border-white/20 w-full max-w-md">
           <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
