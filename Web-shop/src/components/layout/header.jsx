@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
 
+import { useState } from "react"
+
+import { ArrowRight } from "lucide-react"
+
 
 
 export default function Header() {
   return (
+    <div className="min-h-screen bg-gradient-to-br from-purple-500 to-pink-500 flex flex-col">  
 <header className="relative z-10 backdrop-blur-md bg-white/10 border-b border-white/20 w-ful">
 <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
@@ -34,5 +39,7 @@ export default function Header() {
             </div>
             </div>
     </header>
+
+    </div>
   )
 }
